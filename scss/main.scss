@@ -1,0 +1,11 @@
+//Import Base
+@import "./components/pavlo.scss";
+@import "./components/amalia.scss";
+@import "./components/sasha.scss";
+@import "./components/nazari.scss";
+//Default Stye
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
