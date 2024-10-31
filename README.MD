@@ -1,6 +1,6 @@
 # Tasks
 
-##To create merge requst:
+## To create merge requst:
 1. Create branch from origin/dev
 2. Execute command 'git pull origin dev'
 3. Commit your changes
