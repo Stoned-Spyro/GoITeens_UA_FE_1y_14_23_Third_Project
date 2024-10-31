@@ -8,3 +8,4 @@
 | 28.10 | Nazar     | Header              |
 | 28.10 | Pavlo     | Calculator          |
 | 28.10 | Oleksandr | Layout              |
+| 31.10 | Pavlo     | Google Dino         |
