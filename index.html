@@ -7,42 +7,59 @@
     <title>Coding Magic</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__container container">
-        <img src="./img/Group 4.png" alt="logo" class="header__logo" />
-        <nav class="header__navbar">
-          <ul class="header__list">
-            <li class="header__item">
-              Інтерактив
-              
-              <img
-                src="/img/Vector 4.png"
-                alt="arrow"
-                class="header__button--image"
-              />
-              <li class="header__item--burgermenu">a</li>
-              <li class="header__item--burgermenu">a</li>
-              <li class="header__item--burgermenu">a</li>
-            </li>
-            <li class="header__item">Контакти</li>
-            <li class="header__item">Наша команда</li>
-          </ul>
-        </nav>
-        <div class="header__wrapper">
-          <label class="header__switch">
-            <input type="checkbox" />
-            <span class="header__slider"></span>
-          </label>
-
-          <label class="header__switch">
-            <input type="checkbox" checked />
-            <span class="header__slider"></span>
-          </label>
-
-          <p class="header__text">Вітаємо, User!</p>
+    <div>
+      <header class="header">
+        <div class="header__container container">
+          <img src="./img/Group 4.png" alt="logo" class="header__logo" />
+          <nav class="header__navbar">
+            <ul class="header__list">
+              <li class="header__item">
+                Інтерактив
+                
+                <img
+                  src="/img/Vector 4.png"
+                  alt="arrow"
+                  class="header__button--image"
+                />
+                <li class="header__item--burgermenu">a</li>
+                <li class="header__item--burgermenu">a</li>
+                <li class="header__item--burgermenu">a</li>
+              </li>
+              <li class="header__item">Контакти</li>
+              <li class="header__item">Наша команда</li>
+            </ul>
+          </nav>
+          <div class="header__wrapper">
+            <label class="header__switch">
+              <input type="checkbox" />
+              <span class="header__slider"></span>
+            </label>
+  
+            <label class="header__switch">
+              <input type="checkbox" checked />
+              <span class="header__slider"></span>
+            </label>
+  
+            <p class="header__text">Вітаємо, User!</p>
+          </div>
         </div>
+      </header>
+      <div class="main-div-calculator">
+          <h2 class="main-title-calculator">Калькулятор</h2>
+          <div class="main-div-calculator-content">
+              <input class="calculator-input-number" data-action="number_1" type="text" placeholder="Введіть число">
+              <div class="calculator-div-actions">
+                  <button class="calculator-button-action" data-action="+">+</button>
+                  <button class="calculator-button-action" data-action="*">*</button>
+                  <button class="calculator-button-action" data-action="-">-</button>
+                  <button class="calculator-button-action" data-action="/">/</button>
+              </div>
+              <input class="calculator-input-number" data-action="number_2" type="text" placeholder="Введіть число">
+              <button class="calculator-button-action" data-action="=">=</button>
+              <h3 class="calculator-result-calculator">Результат</h3>
+          </div>
       </div>
-    </header>
+    </div>
     <script type="module" src="main.js"></script>
   </body>
 </html>
