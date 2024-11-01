@@ -1,0 +1,96 @@
+.home {
+  // .home__sps
+
+  &__sps {
+  }
+}
+.sps {
+  // .sps-home
+
+  &-home {
+  }
+}
+.sps-home {
+  // .sps-home__container
+
+  &__container {
+  }
+
+  // .sps-home__left
+
+  &__left {
+  }
+
+  // .sps-home__title
+
+  &__title {
+    font-family: $mainFontFamily;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  }
+
+  // .sps-home__list
+
+  &__list {
+  }
+
+  // .sps-home__item
+
+  &__item {
+  }
+
+  // .sps-home__button
+
+  &__button {
+    border-radius: 20px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    background: #000;
+  }
+
+  // .sps-home__svg
+
+  &__svg {
+  }
+
+  // .sps-home__use
+
+  &__use {
+  }
+
+  // .sps-home__text
+
+  &__text {
+  }
+
+  // .sps-home__computer
+
+  &__computer {
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 182px;
+    height: 35px;
+    background: #000;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  // .sps-home__right
+
+  &__right {
+  }
+
+  // .sps-home__listr
+
+  &__listr {
+  }
+
+  // .sps-home__itemr
+
+  &__itemr {
+  }
+}

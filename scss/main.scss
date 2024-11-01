@@ -1,3 +1,4 @@
+@import url("@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:regular&display=swap");
 //Import Base
 @import "./components/pavlo.scss";
 @import "./components/amalia.scss";
@@ -8,6 +9,10 @@
     max-width: 100%;
     margin: 0 auto;
     padding: 0 80px;
+  }
+
+  body {
+    font-family: $mainFontFamily;
   }
 
 :root {
