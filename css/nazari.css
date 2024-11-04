@@ -1,6 +1,7 @@
 .header__container {
   display: flex;
   flex-direction: row;
+  height: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -14,4 +15,37 @@
 .header__wrapper {
   display: flex;
   flex-direction: row;
+}
+.header__switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+}
+.header__switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: #7A7A7A;
+  transition: 0.5s;
+}
+.header__switch input::before {
+  content: "";
+  position: absolute;
+  width: 20.5px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.header__switch input:checked:before {
+  left: 20px;
+  background-color: black;
 }

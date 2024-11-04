@@ -10,14 +10,14 @@
     <div>
       <header class="header">
         <div class="header__container container">
-          <img src="./img/Group 4.png" alt="logo" class="header__logo" />
+          <img src="./img/logo.svg" alt="logo" class="header__logo" />
           <nav class="header__navbar">
             <ul class="header__list">
               <li class="header__item">
                 Інтерактив
                 
                 <img
-                  src="/img/Vector 4.png"
+                  src="/img/arrow.svg"
                   alt="arrow"
                   class="header__button--image"
                 />
@@ -30,16 +30,12 @@
             </ul>
           </nav>
           <div class="header__wrapper">
-            <label class="header__switch">
-              <input type="checkbox" />
-              <span class="header__slider"></span>
-            </label>
-  
-            <label class="header__switch">
-              <input type="checkbox" checked />
-              <span class="header__slider"></span>
-            </label>
-  
+
+            <span class="header__switch">
+              <input type="checkbox" id="switcher">
+              <label for="switcher"></label>
+            </span>
+
             <p class="header__text">Вітаємо, User!</p>
           </div>
         </div>

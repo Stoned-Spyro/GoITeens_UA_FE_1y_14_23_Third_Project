@@ -5,6 +5,7 @@
     &__container {
         display: flex;
         flex-direction: row;
+        height: 80px;
         justify-content: center;
         align-items: center;
     }
@@ -56,20 +57,55 @@
         flex-direction: row;
     }
 
-    // .header__switch
+  
 
-    &__switch {
+	// .header__switch
+
+	&__switch {
+        position: relative;
+        width: 40px;
+        height: 20px;
+        border-radius: 12px;
+	}
+
+    &__switch input{
+        appearance: none;
+        width: 40px;
+        height: 20px;
+        border-radius: 12px;
+        background-color:  #7A7A7A;
+        transition: 0.5s;
     }
 
-    // .header__slider
+   
 
-    &__slider {
+    &__switch input::before{
+        content: "";
+        position: absolute;
+        width: 20.5px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+        top: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        transform: scale(1.1);
+        transition: 0.5s;
+       
     }
+
+   
+    
+    &__switch input:checked:before{
+        left: 20px;
+        background-color: black;
+    }
+    
+
 
     // .header__text
 
     &__text {
     }
 }
-.container {
-}
+
