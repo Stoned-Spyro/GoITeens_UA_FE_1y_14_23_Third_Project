@@ -59,3 +59,31 @@
     gap: 36px;
     align-items: center;
 }
+.main-dino-window{
+    outline: 1px solid black;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url('/img/dino/dino_ground.png');
+    background-repeat: repeat-x;
+    background-position: 0px 130px;
+}
+.dino-player{
+    width: 50px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 30px;
+}
+.dino-button-restart{
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 160px;
+}
+.dino-time{
+    font-size: x-large;
+}
+.cactus{
+    height: 60px;
+    margin-top: 85px;
+}
