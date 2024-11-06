@@ -105,6 +105,19 @@
   gap: 50px;
   padding-right: 361px;
   padding-left: 81px;
+  cursor: pointer;
+}
+.header .item__icon {
+  display: flex;
+  gap: 8px;
+}
+.header__burgermenu {
+  display: none;
+}
+.header__burgermenu.active {
+  display: block;
+  position: absolute;
+  padding-top: 25px;
 }
 .header__wrapper {
   display: flex;
@@ -123,7 +136,7 @@
   width: 40px;
   height: 20px;
   border-radius: 12px;
-  background-color: #7A7A7A;
+  background-color: #7a7a7a;
   transition: 0.5s;
 }
 .header__switch input::before {
@@ -135,7 +148,7 @@
   border: 1px solid black;
   top: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transform: scale(1.1);
   transition: 0.5s;
 }
