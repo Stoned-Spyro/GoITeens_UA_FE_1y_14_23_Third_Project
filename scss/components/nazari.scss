@@ -1,75 +1,125 @@
 .header {
+  // .header__container
 
-    // .header__container
+  &__container {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &__container {
+  // .header__logo
+
+  &__logo {
+  }
+
+  // .header__navbar
+
+  &__navbar {
+  }
+
+  // .header__list
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding-right: 361px;
+    padding-left: 81px;
+    cursor: pointer;
+  }
+
+  // .header__item
+
+  &__item {
+  }
+  
+
+  
+
+.item {
+
+    // .item__icon
+
+    &__icon {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    // .header__logo
-
-    &__logo {
-    }
-
-    // .header__navbar
-
-    &__navbar {
-    }
-
-    // .header__list
-
-    &__list {
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        padding-right: 361px;
-        padding-left: 81px;
-    }
-
-    // .header__item
-
-    &__item {
-
-        // .header__item-
-
-        &- {
-        }
-    }
-
-    // .header__button
-
-    &__button {
-
-        // .header__button-
-
-        &- {
-        }
-    }
-
-    // .header__wrapper
-
-    &__wrapper {
-        display: flex;
-        flex-direction: row;
-    }
-
-    // .header__switch
-
-    &__switch {
-    }
-
-    // .header__slider
-
-    &__slider {
-    }
-
-    // .header__text
-
-    &__text {
+        gap: 8px;
     }
 }
-.container {
+
+
+  // .header__burgermenu
+
+  &__burgermenu {
+   display: none;
+   
+    // .header__burgermenu-
+    &- {
+    }
+  }
+
+  &__burgermenu.active{
+    display: block;
+    position: absolute;
+    padding-top: 25px;
+  }
+
+  // .header__button
+
+  &__button {
+    // .header__button-
+
+    &- {
+    }
+  }
+
+  // .header__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  // .header__switch
+
+  &__switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 12px;
+  }
+
+  &__switch input {
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    border-radius: 12px;
+    background-color: #7a7a7a;
+    transition: 0.5s;
+  }
+
+  &__switch input::before {
+    content: "";
+    position: absolute;
+    width: 20.5px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  &__switch input:checked:before {
+    left: 20px;
+    background-color: black;
+  }
+
+  // .header__text
+
+  &__text {
+  }
 }
