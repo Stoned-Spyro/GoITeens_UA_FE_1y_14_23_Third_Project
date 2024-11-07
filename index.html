@@ -10,55 +10,130 @@
     <div>
       <header class="header">
         <div class="header__container container">
-          <img src="./img/Group 4.png" alt="logo" class="header__logo" />
+          <img src="./img/logo.svg" alt="logo" class="header__logo" />
           <nav class="header__navbar">
             <ul class="header__list">
-              <li class="header__item">
+              <li class="header__item item__icon">
                 Інтерактив
-                
+
                 <img
-                  src="/img/Vector 4.png"
+                  src="/img/arrow.svg"
                   alt="arrow"
                   class="header__button--image"
                 />
-                <li class="header__item--burgermenu">a</li>
-                <li class="header__item--burgermenu">a</li>
-                <li class="header__item--burgermenu">a</li>
+                <ul class="header__burgermenu">
+                  <li class="header__burgermenu--item">a</li>
+                  <li class="header__burgermenu--item">a</li>
+                  <li class="header__burgermenu--item">a</li>
+                </ul>
               </li>
               <li class="header__item">Контакти</li>
               <li class="header__item">Наша команда</li>
             </ul>
           </nav>
           <div class="header__wrapper">
-            <label class="header__switch">
-              <input type="checkbox" />
-              <span class="header__slider"></span>
-            </label>
-  
-            <label class="header__switch">
-              <input type="checkbox" checked />
-              <span class="header__slider"></span>
-            </label>
-  
+            <span class="header__switch">
+              <input type="checkbox" id="switcher" />
+              <label for="switcher"></label>
+            </span>
+
             <p class="header__text">Вітаємо, User!</p>
           </div>
         </div>
       </header>
-      <div class="main-div-calculator">
-          <h2 class="main-title-calculator">Калькулятор</h2>
-          <div class="main-div-calculator-content">
-              <input class="calculator-input-number" data-action="number_1" type="text" placeholder="Введіть число">
-              <div class="calculator-div-actions">
-                  <button class="calculator-button-action" data-action="+">+</button>
-                  <button class="calculator-button-action" data-action="*">*</button>
-                  <button class="calculator-button-action" data-action="-">-</button>
-                  <button class="calculator-button-action" data-action="/">/</button>
-              </div>
-              <input class="calculator-input-number" data-action="number_2" type="text" placeholder="Введіть число">
-              <button class="calculator-button-action" data-action="=">=</button>
-              <h3 class="calculator-result-calculator">Результат</h3>
+      <div class="main">
+        <div class="main__container">
+          <span class="main-div-title main__div">
+            <p class="div-title">Популярні інетрактивні ігри</p>
+          </span>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-birthyear main__div">
+            <h2 class="main-title-birthyear">
+              Перевір в який рік ти народився
+            </h2>
           </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-guesser main__div">
+            <h2 class="main-title-guesser">
+              Вгадай число, яке загадав комп’ютер
+            </h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-rockpaperscisors main__div">
+            <h2 class="main-title-rockpaperscisors">Камінь - ножиці - папір</h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-calculator main__div">
+            <h2 class="main-title-calculator">Калькулятор</h2>
+            <div class="main-div-calculator-content">
+              <input
+                class="calculator-input-number"
+                data-action="number_1"
+                type="text"
+                placeholder="Введіть число"
+              />
+              <div class="calculator-div-actions">
+                <button class="calculator-button-action" data-action="+">
+                  +
+                </button>
+                <button class="calculator-button-action" data-action="*">
+                  *
+                </button>
+                <button class="calculator-button-action" data-action="-">
+                  -
+                </button>
+                <button class="calculator-button-action" data-action="/">
+                  /
+                </button>
+              </div>
+              <input
+                class="calculator-input-number"
+                data-action="number_2"
+                type="text"
+                placeholder="Введіть число"
+              />
+              <button class="calculator-button-action" data-action="=">
+                =
+              </button>
+              <h3 class="calculator-result-calculator">Результат</h3>
+            </div>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-time main__div">
+            <h2 class="main-title-time">Калькулятор часу</h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-dinosaur main__div">
+            <div class="main-div-dino">
+              <h2 class="dino-time">Рахунок: 0</h2>
+              <div class="main-dino-window">
+                <img class="dino-player" src="/img/dino/dino_idle_1.png" alt="">
+                <button class="dino-button-restart">
+                  <img src="/img/dino/restart_button.png" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-football main__div">
+            <h2 class="main-title-football">Футбол</h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-three main__div">
+            <h2 class="main-title-three">Введіть 3 числа</h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-team main__div">
+            <h2 class="main-title-team">Наша команда</h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-scientist main__div">
+            <h2 class="main-title-scientist">Обери вченого/их</h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+        </div>
       </div>
+      <footer class="footer"></footer>
     </div>
     <script type="module" src="main.js"></script>
   </body>
