@@ -65,43 +65,37 @@
   align-items: center;
 }
 
-.main-dino-window {
-  position: relative;
-  outline: 1px solid black;
-  width: 400px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 10px;
-  background-image: url("/img/dino/dino_ground.png");
-  background-repeat: repeat-x;
-  background-position: 0px 130px;
+.main {
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 0 175px;
+}
+.main__container {
+  display: flex;
+  padding: 36px 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 1090px;
+  margin: 0 auto;
+}
+.main__div {
+  padding: 36px 0;
+}
+.main__line {
+  border: 1px solid black;
 }
 
-.dino-player {
-  width: 50px;
-  position: absolute;
-  margin-top: 90px;
-  margin-left: 30px;
-}
-
-.dino-button-restart {
-  position: absolute;
-  margin-top: 45px;
-  margin-left: 160px;
-}
-
-.dino-time {
-  font-size: x-large;
-}
-
-.cactus {
-  height: 60px;
-  margin-top: 85px;
+.div-title {
+  size: 24px;
 }
 
 .header__container {
   display: flex;
   flex-direction: row;
+  height: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -111,10 +105,56 @@
   gap: 50px;
   padding-right: 361px;
   padding-left: 81px;
+  cursor: pointer;
+}
+.header .item__icon {
+  display: flex;
+  gap: 8px;
+}
+.header__burgermenu {
+  display: none;
+}
+.header__burgermenu.active {
+  display: block;
+  position: absolute;
+  padding-top: 25px;
 }
 .header__wrapper {
   display: flex;
   flex-direction: row;
+}
+.header__switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+}
+.header__switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: #7a7a7a;
+  transition: 0.5s;
+}
+.header__switch input::before {
+  content: "";
+  position: absolute;
+  width: 20.5px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.header__switch input:checked:before {
+  left: 20px;
+  background-color: black;
 }
 .container {
   max-width: 100%;
@@ -234,4 +274,5 @@ label {
 
 legend {
   display: block;
+}
 }
