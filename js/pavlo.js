@@ -125,7 +125,7 @@ let start = () => {
     }, 100))
 
     document.addEventListener('keydown', function (event) {
-        if (event.code == 'Space') {
+        if (event.code == 'KeyW') {
             if (gameStatus == 'playing' && isJump == false) {
                 let i = 0
                 isJump = true
@@ -137,7 +137,7 @@ let start = () => {
                             i--
                             if (i == 0) {
                                 clearInterval(jumpDown)
-                                setTimeout(() => isJump = false, 500)
+                                isJump = false
                             } else {
                                 dinoY++
                                 dino.style.marginTop = dinoY + 'px'
@@ -181,22 +181,24 @@ let start = () => {
     }, 2000))
 
     function checkTouch() {
-        const dinoCheck = dino.getBoundingClientRect()
-        let cactus = document.querySelector('.cactus')
-        if (cactus == null) {
-            return
-        } else {
-            const cactusCheck = cactus.getBoundingClientRect()
-            if (
-                dinoCheck.right > cactusCheck.left &&
-                dinoCheck.left < cactusCheck.right &&
-                dinoCheck.bottom > cactusCheck.top &&
-                dinoCheck.top < cactusCheck.bottom
-            ) {
-                resetGame()
-            }
+        const dinoCheck = dino.getBoundingClientRect();
+        let cactus = document.querySelector('.cactus');
+        if (cactus == null) return;
+    
+        const cactusCheck = cactus.getBoundingClientRect();
+    
+        // Уменьшаем размеры модели столкновения кактуса
+        const cactusBuffer = 10; // Чем больше значение, тем меньше модель
+        if (
+            dinoCheck.right > cactusCheck.left + cactusBuffer &&
+            dinoCheck.left < cactusCheck.right - cactusBuffer &&
+            dinoCheck.bottom > cactusCheck.top + cactusBuffer &&
+            dinoCheck.top < cactusCheck.bottom - cactusBuffer
+        ) {
+            resetGame();
         }
     }
+    
 }
 
 startButton.addEventListener('click', function () {
