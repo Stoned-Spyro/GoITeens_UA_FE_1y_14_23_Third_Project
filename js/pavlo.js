@@ -186,9 +186,7 @@ let start = () => {
         if (cactus == null) return;
     
         const cactusCheck = cactus.getBoundingClientRect();
-    
-        // Уменьшаем размеры модели столкновения кактуса
-        const cactusBuffer = 10; // Чем больше значение, тем меньше модель
+        const cactusBuffer = 20; 
         if (
             dinoCheck.right > cactusCheck.left + cactusBuffer &&
             dinoCheck.left < cactusCheck.right - cactusBuffer &&
