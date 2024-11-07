@@ -66,6 +66,7 @@
 }
 
 .main-dino-window {
+  position: relative;
   outline: 1px solid black;
   width: 400px;
   height: 150px;
