@@ -1,3 +1,5 @@
+//! sps
+
 document.addEventListener("DOMContentLoaded", function () {
     let userScore = 0;
     let computerScore = 0;
@@ -21,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userButtons.forEach(function (button, index) {
       button.addEventListener("click", function () {
         userChoice = choices[index];
-        userButtons.forEach((btn) => (btn.style.backgroundColor = "#000"));
+        userButtons.forEach(btn => (btn.style.backgroundColor = "#000"));
         button.style.backgroundColor = "#7e7e7e";
       });
     });
@@ -66,4 +68,21 @@ document.addEventListener("DOMContentLoaded", function () {
       scoreUser.textContent = `Ви - ${userScore}`;
       scoreComputer.textContent = `Комп’ютер - ${computerScore}`;
     });
+  });
+
+  //! three number
+
+  const enterNumbers = document.querySelectorAll(".three-home__input");
+  const biggestNumber = document.querySelector(".three-home__text");
+
+  function searchMaxNumber(){
+    const numberArray = Array.from(enterNumbers).map(input => Number(input.value));;
+    if(numberArray.every(num => !isNaN(num) && num !== 0)){
+      const max = Math.max(...numberArray); 
+      biggestNumber.textContent = `Найбільше число, яке ви ввели - ${max}`;
+    }
+  }
+
+  enterNumbers.forEach(input => {
+    input.addEventListener("input", searchMaxNumber);
   });
