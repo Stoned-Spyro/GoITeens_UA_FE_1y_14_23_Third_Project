@@ -34,35 +34,46 @@
 
   &__item {
   }
-  
 
-  
-
-.item {
-
+  .item {
     // .item__icon
 
     &__icon {
-        display: flex;
-        gap: 8px;
+      display: flex;
+      gap: 8px;
     }
-}
-
+  }
 
   // .header__burgermenu
 
   &__burgermenu {
-   display: none;
-   
+    display: none;
+
     // .header__burgermenu-
     &- {
     }
   }
 
-  &__burgermenu.active{
+  &__burgermenu.active {
     display: block;
     position: absolute;
     padding-top: 25px;
+    
+  }
+
+ 
+    // .burgermenu__link
+
+    &__link {
+      text-decoration: none;
+      color: black;
+    }
+  
+  // .header__links
+
+  &__links {
+    text-decoration: none;
+    color: black;
   }
 
   // .header__button
@@ -79,6 +90,7 @@
   &__wrapper {
     display: flex;
     flex-direction: row;
+    gap: 51px;
   }
 
   // .header__switch

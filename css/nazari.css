@@ -25,9 +25,18 @@
   position: absolute;
   padding-top: 25px;
 }
+.header__link {
+  text-decoration: none;
+  color: black;
+}
+.header__links {
+  text-decoration: none;
+  color: black;
+}
 .header__wrapper {
   display: flex;
   flex-direction: row;
+  gap: 51px;
 }
 .header__switch {
   position: relative;
