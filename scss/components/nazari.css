@@ -1,0 +1,64 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-right: 361px;
+  padding-left: 81px;
+  cursor: pointer;
+}
+.header .item__icon {
+  display: flex;
+  gap: 8px;
+}
+.header__burgermenu {
+  display: none;
+}
+.header__burgermenu.active {
+  display: block;
+  position: absolute;
+  padding-top: 25px;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.header__switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+}
+.header__switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: #7a7a7a;
+  transition: 0.5s;
+}
+.header__switch input::before {
+  content: "";
+  position: absolute;
+  width: 20.5px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.header__switch input:checked:before {
+  left: 20px;
+  background-color: black;
+}/*# sourceMappingURL=nazari.css.map */
