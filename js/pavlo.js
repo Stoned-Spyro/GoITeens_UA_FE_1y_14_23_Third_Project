@@ -203,3 +203,25 @@ startButton.addEventListener('click', function () {
     document.querySelector('.dino-time').textContent = 'Рахунок: 0'
     start()
 })
+//             Football
+let mainFootball = document.querySelector('.football-main-window');
+let footballBall = document.querySelector('.football-ball');
+let outlineCode = mainFootball.getBoundingClientRect()
+let footballBallWinTop = outlineCode.top + window.scrollY
+let footballBallWinLeft = outlineCode.left + window.scrollX
+footballBall.style.top =  footballBallWinTop + 10+ 'px';
+footballBall.style.left = footballBallWinLeft + 10  + 'px';
+document.addEventListener('click', function(event) {
+    let outlineCode = mainFootball.getBoundingClientRect()
+    let footballBallWinTop = outlineCode.top + window.scrollY
+    let footballBallWinLeft = outlineCode.left + window.scrollX
+    let Y = event.clientY + window.scrollY - (footballBall.offsetHeight / 2);
+    let X = event.clientX + window.scrollX - (footballBall.offsetWidth / 2); 
+    if(Y < footballBallWinTop || X < footballBallWinLeft || Y > footballBallWinTop + outlineCode.height - footballBall.offsetHeight || X > footballBallWinLeft + outlineCode.width - footballBall.offsetWidth ){
+
+    }
+    else{
+        footballBall.style.top = Y + 'px';
+        footballBall.style.left = X + 'px';
+    }
+});
