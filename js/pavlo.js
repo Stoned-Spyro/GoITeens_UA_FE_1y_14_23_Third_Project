@@ -125,7 +125,7 @@ let start = () => {
     }, 100))
 
     document.addEventListener('keydown', function (event) {
-        if (event.code == 'Space') {
+        if (event.code == 'KeyW') {
             if (gameStatus == 'playing' && isJump == false) {
                 let i = 0
                 isJump = true
@@ -137,7 +137,7 @@ let start = () => {
                             i--
                             if (i == 0) {
                                 clearInterval(jumpDown)
-                                setTimeout(() => isJump = false, 500)
+                                isJump = false
                             } else {
                                 dinoY++
                                 dino.style.marginTop = dinoY + 'px'
@@ -181,25 +181,47 @@ let start = () => {
     }, 2000))
 
     function checkTouch() {
-        const dinoCheck = dino.getBoundingClientRect()
-        let cactus = document.querySelector('.cactus')
-        if (cactus == null) {
-            return
-        } else {
-            const cactusCheck = cactus.getBoundingClientRect()
-            if (
-                dinoCheck.right > cactusCheck.left &&
-                dinoCheck.left < cactusCheck.right &&
-                dinoCheck.bottom > cactusCheck.top &&
-                dinoCheck.top < cactusCheck.bottom
-            ) {
-                resetGame()
-            }
+        const dinoCheck = dino.getBoundingClientRect();
+        let cactus = document.querySelector('.cactus');
+        if (cactus == null) return;
+    
+        const cactusCheck = cactus.getBoundingClientRect();
+        const cactusBuffer = 20; 
+        if (
+            dinoCheck.right > cactusCheck.left + cactusBuffer &&
+            dinoCheck.left < cactusCheck.right - cactusBuffer &&
+            dinoCheck.bottom > cactusCheck.top + cactusBuffer &&
+            dinoCheck.top < cactusCheck.bottom - cactusBuffer
+        ) {
+            resetGame();
         }
     }
+    
 }
 
 startButton.addEventListener('click', function () {
     document.querySelector('.dino-time').textContent = 'Рахунок: 0'
     start()
 })
+//             Football
+let mainFootball = document.querySelector('.football-main-window');
+let footballBall = document.querySelector('.football-ball');
+let outlineCode = mainFootball.getBoundingClientRect()
+let footballBallWinTop = outlineCode.top + window.scrollY
+let footballBallWinLeft = outlineCode.left + window.scrollX
+footballBall.style.top =  footballBallWinTop + 10+ 'px';
+footballBall.style.left = footballBallWinLeft + 10  + 'px';
+document.addEventListener('click', function(event) {
+    let outlineCode = mainFootball.getBoundingClientRect()
+    let footballBallWinTop = outlineCode.top + window.scrollY
+    let footballBallWinLeft = outlineCode.left + window.scrollX
+    let Y = event.clientY + window.scrollY - (footballBall.offsetHeight / 2);
+    let X = event.clientX + window.scrollX - (footballBall.offsetWidth / 2); 
+    if(Y < footballBallWinTop || X < footballBallWinLeft || Y > footballBallWinTop + outlineCode.height - footballBall.offsetHeight || X > footballBallWinLeft + outlineCode.width - footballBall.offsetWidth ){
+
+    }
+    else{
+        footballBall.style.top = Y + 'px';
+        footballBall.style.left = X + 'px';
+    }
+});

@@ -115,6 +115,7 @@
   height: 50px;
   transition: all 100ms;
 }
+
 .sps-home__container {
   display: flex;
   justify-content: center;
@@ -445,4 +446,4 @@ label {
 
 legend {
   display: block;
-}
+}/*# sourceMappingURL=main.css.map */
