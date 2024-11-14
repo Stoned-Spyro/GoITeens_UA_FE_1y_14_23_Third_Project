@@ -1,7 +1,13 @@
 const toogleBurgerMenu = document.querySelector('.item__icon')
 const burgerMenu = document.querySelector('.header__burgermenu')
 
-toogleBurgerMenu.addEventListener('click', function(event) {
+toogleBurgerMenu.addEventListener('mouseover', function(event) {
     event.stopPropagation(); 
-   burgerMenu.classList.toggle('active'); 
+    burgerMenu.classList.add('active'); 
 });
+
+toogleBurgerMenu.addEventListener('mouseout', function(event) {
+    burgerMenu.classList.remove('active'); 
+});
+
+
