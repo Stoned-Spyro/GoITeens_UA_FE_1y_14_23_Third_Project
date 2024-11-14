@@ -86,3 +86,74 @@ document.addEventListener("DOMContentLoaded", function () {
   enterNumbers.forEach(input => {
     input.addEventListener("input", searchMaxNumber);
   });
+
+
+//! team
+const arrowLeft = document.querySelector('.team-home__arrow-left');
+const arrowRight = document.querySelector('.team-home__arrow-right');
+const slides = document.querySelectorAll('.team-home__slides');
+const bottom = document.getElementById('bottom');
+
+let currentSlideIndex = 0;
+const paginationLines = [];
+
+function createPaginationLine() {
+  const div = document.createElement('div');
+  div.className = 'team-home__pagination';
+  bottom.appendChild(div);
+  paginationLines.push(div);
+}
+
+function addPagination() {
+  slides.forEach(createPaginationLine);
+  paginationLines[0].classList.add('active');
+  paginationLines.forEach((line, index) => {
+    line.addEventListener('click', () => changeSlide(index));
+  });
+}
+
+function addActiveClass() {
+  paginationLines[currentSlideIndex].classList.add('active');
+}
+
+function removeActiveClass() {
+  paginationLines[currentSlideIndex].classList.remove('active');
+}
+
+function showSlide() {
+  slides[currentSlideIndex].classList.add('block');
+  paginationLines[currentSlideIndex].classList.add('active');
+}
+
+function hideSlide() {
+  slides[currentSlideIndex].classList.remove('block');
+  paginationLines[currentSlideIndex].classList.remove('active');
+}
+
+function changeSlide(slideIndex) {
+  hideSlide();
+  removeActiveClass();
+  currentSlideIndex = slideIndex;
+  addActiveClass();
+  showSlide();
+}
+
+function previousSlide() {
+  let newSlideIndex = currentSlideIndex - 1;
+  if (newSlideIndex < 0) {
+    newSlideIndex = slides.length - 1;
+  }
+  changeSlide(newSlideIndex);
+}
+
+function nextSlide() {
+  let newSlideIndex = currentSlideIndex + 1;
+  if (newSlideIndex > slides.length - 1) {
+    newSlideIndex = 0;
+  }
+  changeSlide(newSlideIndex);
+}
+
+addPagination();
+arrowLeft.addEventListener('click', previousSlide);
+arrowRight.addEventListener('click', nextSlide);
