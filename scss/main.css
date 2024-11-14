@@ -1,0 +1,449 @@
+.main-title-calculator {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.calculator-input-number {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 135px;
+  height: 35px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #d7d7d7;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+}
+
+.calculator-button-action {
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #000;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+
+.calculator-result-calculator {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 118px;
+  height: 35px;
+  background: #d7d7d7;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+}
+
+.main-div-calculator-content {
+  display: flex;
+  gap: 38px;
+  align-items: center;
+}
+
+.calculator-div-actions {
+  display: flex;
+  flex-wrap: wrap;
+  width: 62px;
+  gap: 10px;
+}
+
+.main-div-calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+}
+
+.main-dino-window {
+  position: relative;
+  outline: 1px solid black;
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url("/img/dino/dino_ground.png");
+  background-repeat: repeat-x;
+  background-position: 0px 130px;
+}
+
+.dino-player {
+  width: 50px;
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+.dino-button-restart {
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 160px;
+}
+
+.dino-time {
+  font-size: x-large;
+}
+
+.cactus {
+  height: 60px;
+  margin-top: 85px;
+}
+
+.football-main-window {
+  background-color: #5ABB58;
+  border-radius: 10px;
+  outline: 3px solid black;
+  width: 720px;
+  height: 220px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.football-ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transition: all 100ms;
+}
+
+.sps-home__container {
+  display: flex;
+  justify-content: center;
+}
+.sps-home__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sps-home__title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding-bottom: 35px;
+  text-align: center;
+}
+.sps-home__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 35px;
+}
+.sps-home__button {
+  border-radius: 20px;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+.sps-home__button:hover {
+  background-color: #7e7e7e;
+}
+.sps-home__text {
+  font-weight: 400;
+  font-size: 12px;
+  color: #039900;
+  text-align: center;
+  padding-bottom: 35px;
+}
+.sps-home__computer {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 182px;
+  height: 35px;
+  background: #000;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+.sps-home__computer:hover {
+  background-color: #7e7e7e;
+}
+.sps-home__textcomputer {
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+.sps-home__listr {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}
+.sps-home__itemr {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000;
+}
+
+.three-home {
+  display: flex;
+  justify-content: center;
+}
+.three-home__title {
+  text-align: center;
+  padding-bottom: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+.three-home__list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 35px;
+}
+.three-home__input {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 135px;
+  height: 35px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #d7d7d7;
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+}
+.three-home__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+}
+
+.main {
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 0 175px;
+}
+.main__container {
+  display: flex;
+  padding: 36px 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  max-width: 1090px;
+  margin: 0 auto;
+}
+.main__div {
+  padding: 36px 0;
+}
+.main__line {
+  border: 1px solid black;
+}
+
+.div-title {
+  size: 24px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding-right: 361px;
+  padding-left: 81px;
+  cursor: pointer;
+}
+.header .item__icon {
+  display: flex;
+  gap: 8px;
+}
+.header__burgermenu {
+  display: none;
+}
+.header__burgermenu.active {
+  display: block;
+  position: absolute;
+  padding-top: 25px;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.header__switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+}
+.header__switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 40px;
+  height: 20px;
+  border-radius: 12px;
+  background-color: #7a7a7a;
+  transition: 0.5s;
+}
+.header__switch input::before {
+  content: "";
+  position: absolute;
+  width: 20.5px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.header__switch input:checked:before {
+  left: 20px;
+  background-color: black;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+:root {
+  --font-family: "Montserrat Alternates", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Sacramento", sans-serif;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}/*# sourceMappingURL=main.css.map */
