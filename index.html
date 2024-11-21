@@ -59,7 +59,7 @@
             </h2>
           </div>
           <hr class="main__line" width="532px" size="1px" />
-          <div class="main-div-rockpaperscisors main__div">
+          <div class="rockpaperscisors main__div">
             <section class="home__sps sps-home">
               <!-- sps - stone-paper-scissors -->
               <div class="sps-home__container container">
@@ -136,7 +136,29 @@
           <hr class="main__line" width="532px" size="1px" />
           <div class="main-div-time main__div">
             <h2 class="main-title-time">
-              section.
+              <section class="home__time time-home">
+                <div class="time-home__container container">
+                  <h1 class="time-home__title">Калькулятор часу</h1>
+                  <div class="time-home__bottom">
+              <div class="time-home__actions">
+                <input
+                class="time-home__calcurator"
+                data-action="number_1"
+                type="text"
+                placeholder="Введіть число"
+                
+              />
+                <button class="time-home__button">
+                  <svg class="time-home__svg" width="35" height="35" viewBox="0 0 35 35" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H17.5C27.165 0 35 7.83502 35 17.5C35 27.165 27.165 35 17.5 35H0V0Z" fill="black" />
+                    <circle cx="16.5217" cy="16.5217" r="5.52174" stroke="white" stroke-width="2" />
+                    <path d="M24.2929 25.7071C24.6834 26.0976 25.3166 26.0976 25.7071 25.7071C26.0976 25.3166 26.0976 24.6834 25.7071 24.2929L24.2929 25.7071ZM21.468 20.0538L20.7609 19.3467L19.3467 20.7609L20.0538 21.468L21.468 20.0538ZM25.7071 24.2929L21.468 20.0538L20.0538 21.468L24.2929 25.7071L25.7071 24.2929Z" fill="white" />
+                  </svg>
+                </button>
+                  </div>
+                  <p class="time-home__text">3 дн. 15:45:01</p>
+                </div>
+              </section>
             </h2>
           </div>
           <hr class="main__line" width="532px" size="1px" />
@@ -275,7 +297,44 @@
           <hr class="main__line" width="532px" size="1px" />
         </div>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__container ">
+          <!-- <div class="footer__left"> -->
+            <img src="./img/logo.svg" alt="logo" class="footer__logo" />
+          <!-- </div> -->
+            <ul class="footer__list">
+              <li class="footer__item">
+                <p class="footer__text">Тел: +38 (123) 456 78 90</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">E-Mail: codingmagic@gmail.com</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">Facebook: CodingMagic</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">Twitter: CodingMagic</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">Instagram: CodingMagic</p>
+              </li>
+            </ul>
+              <!-- <div class="footer__right"> -->
+                <div class="footer__information">
+                  <input
+                      class="footer__input"
+                      autofocus
+                      type="text"
+                      autocomplete="on"
+                      placeholder="Ваша ел. адреса..."
+                    />
+                    <button class="footer__button">Підписатись</button>
+                    <p class="footer__textinfo">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+                </div>
+              <!-- </div> -->
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="main.js"></script>
   </body>

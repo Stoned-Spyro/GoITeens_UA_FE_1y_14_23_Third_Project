@@ -157,3 +157,32 @@ function nextSlide() {
 addPagination();
 arrowLeft.addEventListener('click', previousSlide);
 arrowRight.addEventListener('click', nextSlide);
+
+//! time
+
+const inputField = document.querySelector('.time-home__calcurator');
+const button = document.querySelector('.time-home__button');
+const outputText = document.querySelector('.time-home__text');
+
+function formatTime(seconds) {
+  const days = Math.floor(seconds / (24 * 3600));
+  seconds %= 24 * 3600;
+  const hours = Math.floor(seconds / 3600);
+  seconds %= 3600;
+  const minutes = Math.floor(seconds / 60);
+  seconds %= 60;
+
+  return `${days} дн. ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+}
+
+button.addEventListener('click', () => {
+  const inputValue = inputField.value;
+  const seconds = parseInt(inputValue, 10);
+
+  if (!isNaN(seconds) && seconds >= 0) {
+    const formattedTime = formatTime(seconds);
+    outputText.textContent = formattedTime;
+  } else {
+    outputText.textContent = 'Це не є числом';
+  }
+});
