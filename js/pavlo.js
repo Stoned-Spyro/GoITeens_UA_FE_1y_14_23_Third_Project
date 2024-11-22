@@ -19,7 +19,6 @@ resultButton.addEventListener('click',function(){
         let num1 = parseFloat(firstNumberInput.value)
         let num2 = parseFloat(secondNumberInput.value)
         if (isNaN(num1) || isNaN(num2)){
-            console.log(true)
         }
         else{
             console.log(nowAction)
@@ -225,3 +224,326 @@ document.addEventListener('click', function(event) {
         footballBall.style.left = X + 'px';
     }
 });
+//               Scientists
+const scientists = [ 
+    { 
+        name: "Albert", 
+        surname: "Einstein", 
+        born: 1879, 
+        dead: 1955, 
+        id: 1 
+    }, 
+    { 
+        name: "Isaac", 
+        surname: "Newton", 
+        born: 1643, 
+        dead: 1727, 
+        id: 2 
+    }, 
+    { 
+        name: "Galileo", 
+        surname: "Galilei", 
+        born: 1564, 
+        dead: 1642, 
+        id: 3 
+    }, 
+    { 
+        name: "Marie", 
+        surname: "Curie", 
+        born: 1867, 
+        dead: 1934, 
+        id: 4 
+    }, 
+    { 
+        name: "Johannes", 
+        surname: "Kepler", 
+        born: 1571, 
+        dead: 1630, 
+        id: 5 
+    }, 
+    { 
+        name: "Nicolaus", 
+        surname: "Copernicus", 
+        born: 1473, 
+        dead: 1543, 
+        id: 6 
+    }, 
+    { 
+        name: "Max", 
+        surname: "Planck", 
+        born: 1858, 
+        dead: 1947, 
+        id: 7 
+    }, 
+    { 
+        name: "Katherine", 
+        surname: "Blodgett", 
+        born: 1898, 
+        dead: 1979, 
+        id: 8 
+    }, 
+    { 
+        name: "Ada", 
+        surname: "Lovelace", 
+        born: 1815, 
+        dead: 1852, 
+        id: 9 
+    }, 
+    { 
+        name: "Sarah E.", 
+        surname: "Goode", 
+        born: 1855, 
+        dead: 1905, 
+        id: 10 
+    }, 
+    { 
+        name: "Lise", 
+        surname: "Meitner", 
+        born: 1878, 
+        dead: 1968, 
+        id: 11 
+    }, 
+    { 
+        name: "Hanna", 
+        surname: "Hammarström", 
+        born: 1829, 
+        dead: 1909, 
+        id: 12 
+    } 
+];
+const alphabet = {
+    'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5, 'F': 6, 'G': 7, 'H': 8, 'I': 9, 'J': 10, 
+    'K': 11, 'L': 12, 'M': 13, 'N': 14, 'O': 15, 'P': 16, 'Q': 17, 'R': 18, 'S': 19, 
+    'T': 20, 'U': 21, 'V': 22, 'W': 23, 'X': 24, 'Y': 25, 'Z': 26
+}
+//              querySelector
+let scientists_19_st_but = document.querySelector('#scientists-19-st')
+let scientists_alphabet = document.querySelector('#scientists-alphabet')
+let scientists_age = document.querySelector('#scientists-age')
+let scientists_born = document.querySelector('#scientists-born')
+let scientists_albert_born = document.querySelector('#scientists-albert-born')
+let scientists_C = document.querySelector('#scientists-C')
+let scientists_A = document.querySelector('#scientists-A')
+let scientists_best_worst = document.querySelector('#scientists-best-worst')
+let scientists_first_letter = document.querySelector('#scientists-first-letter')
+let box_texts = document.querySelectorAll('.main-scientist-item-title')
+let box_texts_2 = document.querySelectorAll('.main-scientist-item-date')
+//              code
+scientists_19_st_but.addEventListener('click',function(){
+    let output = []
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    for(let scientist of scientists){
+        if(scientist.born > 1800 && scientist.born < 1900){
+            output.unshift(scientist)
+        }
+    }
+    for(let i = 0;i < output.length;i++){
+        box_texts[i].textContent = output[i].name + ' ' + output[i].surname
+        box_texts_2[i].textContent = output[i].born + '-' + output[i].dead
+    }
+})
+scientists_alphabet.addEventListener('click',function(){
+    let output = []
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let list = {
+        A: [], 
+        B: [], 
+        C: [], 
+        D: [], 
+        E: [], 
+        F: [], 
+        G: [], 
+        H: [], 
+        I: [], 
+        J: [],
+        K: [],
+        L: [], 
+        M: [], 
+        N: [], 
+        O: [], 
+        P: [], 
+        Q: [], 
+        R: [], 
+        S: [], 
+        T: [],
+        U: [],
+        V: [], 
+        W: [],
+        X: [], 
+        Y: [], 
+        Z: []
+    }
+    let outputFinal = []
+    for(let scientist of scientists){
+        let firstLet = scientist.name[0]
+        for(let item in list){
+            if(firstLet == item){
+                list[item].unshift(scientist)
+            }
+        }
+    }
+    for(let item in list){
+        if(list[item].length == 0){
+            continue
+        }
+        else{
+            output.push(list[item])
+        }
+    }
+    for(let item of output){
+        for(let _ of item){
+            outputFinal.push(_)
+        }
+    }
+    output = outputFinal
+    for(let i = 0;i < output.length;i++){
+        box_texts[i].textContent = output[i].name + ' ' + output[i].surname
+        box_texts_2[i].textContent = output[i].born + '-' + output[i].dead
+    }
+})
+scientists_age.addEventListener('click',function(){
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let output = [];
+    let slientOut = scientists.slice();
+    
+    while (slientOut.length > 0) {
+        let bestNum = 0;
+        let index = 0;
+        for (let i = 0; i < slientOut.length; i++) {
+            let num = slientOut[i].dead - slientOut[i].born;
+            if (num > bestNum) {
+                bestNum = num;
+                index = i;
+            }
+        }
+        let removedElement = slientOut.splice(index, 1);
+        output.push(removedElement);
+    }
+    for(let i = 0;i < output.length;i++){
+        box_texts[i].textContent = output[i][0].name + ' ' + output[i][0].surname
+        box_texts_2[i].textContent = output[i][0].born + '-' + output[i][0].dead
+    }
+    
+})
+scientists_born.addEventListener('click',function(){
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let output = [];
+    let upNum = 0
+    let upName = {}
+    for(let item of scientists){
+        if(upNum < item.born){
+            upNum = item.born
+            upName = item
+            output.push(upName)
+        }
+    }    
+    for(let item of output){
+        box_texts[i].textContent = item.name + ' ' + item.surname
+        box_texts_2[i].textContent = item.born + '-' + item.dead
+    }
+})
+scientists_albert_born.addEventListener('click',function(){
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let output = [];
+    for(let item of scientists){
+        if(item.name == "Albert" && item.surname == "Einstein"){
+            output.push(item)
+        }
+        console.log('1')
+    }    
+    for(let item of output){
+        box_texts[i].textContent = item.name + ' ' + item.surname
+        box_texts_2[i].textContent = item.born + '-' + item.dead
+    }
+})
+scientists_C.addEventListener('click',function(){
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let output = [];
+    for(let item of scientists){
+        if(item.surname[0] == "C"){
+            output.push(item)
+            continue
+        }
+    }    
+    for(let i = 0;i < output.length;i++){
+        box_texts[i].textContent = output[i].name + ' ' + output[i].surname
+        box_texts_2[i].textContent = output[i].born + '-' + output[i].dead
+    }
+})
+scientists_A.addEventListener('click',function(){
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let output = [];
+    for(let item of scientists){
+        if(item.name[0] == "A"){
+            output.push(item)
+            continue
+        }
+    }    
+    for(let i = 0;i < output.length;i++){
+        box_texts[i].textContent = output[i].name + ' ' + output[i].surname
+        box_texts_2[i].textContent = output[i].born + '-' + output[i].dead
+    }
+})
+scientists_best_worst.addEventListener('click',function(){
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let output = [];
+    let bestNum = 0
+    let worstNum = 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    for(let item of scientists){
+        let age = item.dead - item.born
+        if(bestNum < age){
+            bestNum = item
+            continue
+        }
+        if(worstNum > age){
+            worstNum = item
+            continue
+        }
+    }   
+    output.push(bestNum)
+    output.push(worstNum)
+    for(let i = 0;i < output.length;i++){
+        box_texts[i].textContent = output[i].name + ' ' + output[i].surname
+        box_texts_2[i].textContent = output[i].born + '-' + output[i].dead
+    }
+})
+scientists_first_letter.addEventListener('click',function(){
+    for(let i = 0;i < 12;i++){
+        box_texts[i].textContent = ''
+        box_texts_2[i].textContent = ''
+    }
+    let output = [];
+    for(let item of scientists){
+        if(item.name[0] == item.surname[0]){
+            output.push(item)
+        }
+    }   
+    for(let i = 0;i < output.length;i++){
+        box_texts[i].textContent = output[i].name + ' ' + output[i].surname
+        box_texts_2[i].textContent = output[i].born + '-' + output[i].dead
+    }
+})
