@@ -375,10 +375,6 @@
   position: absolute;
   padding-top: 25px;
 }
-.header__link {
-  text-decoration: none;
-  color: black;
-}
 .header__links {
   text-decoration: none;
   color: black;
@@ -414,12 +410,16 @@
   top: 0;
   left: 0;
   background-color: #ffffff;
-  transform: scale(1.1);
   transition: 0.5s;
+  background-image: url("../../img/Ellipse 8.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header__switch input:checked:before {
   left: 20px;
   background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("../../img/Ellipse 7.svg");
 }
 body {
   font-family: "Montserrat Alternates", sans-serif;
