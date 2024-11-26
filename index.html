@@ -56,16 +56,60 @@
           <span class="main-div-title main__div">
             <p class="div-title">Популярні інетрактивні ігри</p>
           </span>
-          <hr class="main__line" width="532px" size="1px" />
-          <div class="main-div-birthyear main__div" id="game_1">
-            <h2 class="main-title-birthyear">
-              Перевір в який рік ти народився
+          <hr class="main__line" width="532px" size="1px">
+          <div class="main-div-birth main__div" id="game_1">
+            <h2 class="main-title-birth">
+              <section class="home__birth birth-home">
+                <div class="birth-home__container container">
+                  <h1 class="birth-home__title">Перевір в який рік ти народився</h1>
+                  <div class="birth-home__bottom">
+              <div class="birth-home__actions">
+                <input
+                class="birth-home__calcurator"
+                data-action="number_1"
+                type="text"
+                placeholder="Введіть число"
+                id="year"
+              />
+                <button class="birth-home__button" id="yearButton">
+                  <svg class="birth-home__svg" width="35" height="35" viewBox="0 0 35 35" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H17.5C27.165 0 35 7.83502 35 17.5C35 27.165 27.165 35 17.5 35H0V0Z" fill="black" />
+                    <circle cx="16.5217" cy="16.5217" r="5.52174" stroke="white" stroke-width="2" />
+                    <path d="M24.2929 25.7071C24.6834 26.0976 25.3166 26.0976 25.7071 25.7071C26.0976 25.3166 26.0976 24.6834 25.7071 24.2929L24.2929 25.7071ZM21.468 20.0538L20.7609 19.3467L19.3467 20.7609L20.0538 21.468L21.468 20.0538ZM25.7071 24.2929L21.468 20.0538L20.0538 21.468L24.2929 25.7071L25.7071 24.2929Z" fill="white" />
+                  </svg>
+                </button>
+                  </div>
+                  <p class="birth-home__text" id="yearResult"></p>
+                </div>
+              </section>
             </h2>
           </div>
-          <hr class="main__line" width="532px" size="1px" />
-          <div class="main-div-guesser main__div" id="game_2">
-            <h2 class="main-title-guesser">
-              Вгадай число, яке загадав комп’ютер
+          <hr class="main__line" width="532px" size="1px">
+          <div class="main-div-birth main__div" id="game_2">
+            <h2 class="main-title-birth">
+              <section class="home__birth birth-home">
+                <div class="birth-home__container container">
+                  <h1 class="birth-home__title">Вгадай число, яке загадав комп’ютер</h1>
+                  <div class="birth-home__bottom">
+              <div class="birth-home__actions">
+                <input
+                class="birth-home__calcurator"
+                data-action="number_1"
+                type="text"
+                placeholder="Введіть число"
+                id="guess"
+              />
+                <button class="birth-home__button" id="guessButton">
+                  <svg class="birth-home__svg" width="35" height="35" viewBox="0 0 35 35" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H17.5C27.165 0 35 7.83502 35 17.5C35 27.165 27.165 35 17.5 35H0V0Z" fill="black" />
+                    <circle cx="16.5217" cy="16.5217" r="5.52174" stroke="white" stroke-width="2" />
+                    <path d="M24.2929 25.7071C24.6834 26.0976 25.3166 26.0976 25.7071 25.7071C26.0976 25.3166 26.0976 24.6834 25.7071 24.2929L24.2929 25.7071ZM21.468 20.0538L20.7609 19.3467L19.3467 20.7609L20.0538 21.468L21.468 20.0538ZM25.7071 24.2929L21.468 20.0538L20.0538 21.468L24.2929 25.7071L25.7071 24.2929Z" fill="white" />
+                  </svg>
+                </button>
+                  </div>
+                  <p class="birth-home__text" id="guessResult"></p>
+                </div>
+              </section>
             </h2>
           </div>
           <hr class="main__line" width="532px" size="1px" />
