@@ -522,3 +522,180 @@ scientists_first_letter.addEventListener("click", function () {
     box_texts_2[i].textContent = output[i].born + "-" + output[i].dead;
   }
 });
+//             Search 
+const games =  [
+    {
+      id: 1,
+      name: 'Високосний калькулятор',
+      category: 'numerical',
+
+    },
+    {
+        id: 2,
+        name: 'Вгадай число',
+        category: 'numerical',
+  
+      },
+      {
+        id: 3,
+        name: 'Камінь-Ножиці-Папір',
+        category: 'game',
+  
+      },
+      {
+        id: 4,
+        name: 'Калькулятор',
+        category: 'numerical',
+  
+      },
+      {
+        id: 5,
+        name: 'Калькулятор часу',
+        category: 'numerical',
+  
+      },
+      {
+        id: 6,
+        name: 'Google динозаврик',
+        category: 'game',
+  
+      },
+      {
+        id: 7,
+        name: 'Футбол',
+        category: 'game',
+  
+      },
+      {
+        id: 8,
+        name: 'Найбільше число',
+        category: 'numerical',
+  
+      },
+      {
+        id: 9,
+        name: 'Наша команда',
+        category: 'acquaintance',
+  
+      },
+      {
+        id: 10,
+        name: 'Вчений',
+        category: 'acquaintance',
+  
+      },
+]
+//      code
+let numericalBut = document.querySelector('#numerical')
+let gameBut = document.querySelector('#game')
+let acquaintanceBut = document.querySelector('#acquaintance')
+
+numericalBut.addEventListener('click',function(){
+  let hrs = document.querySelectorAll(".main__line")
+  for(let i of hrs){
+    i.remove()
+  } 
+  let mainNodes = document.querySelector('.main__container').children
+  for(let i of mainNodes){
+    i.classList.add('notInSearch')
+  }
+  let needGames = games.filter((a) => {
+    if (a.category == 'numerical') {
+      return 1;
+    } 
+    else {
+      return 0;
+    }
+  }).map(a => a.id);
+  for(let i of needGames){
+    let item = document.querySelector('#game_' + i)
+    item.classList.remove('notInSearch')
+    mainNodes = document.querySelector('.main__container').children
+  }
+  mainNodes = document.querySelector('.main__container').children
+  Array.from(mainNodes).forEach(game => {
+    if (!game.classList.contains('notInSearch')) {
+        let hr = document.createElement('hr');
+        hr.style.width = "532px";
+        hr.style.size = '1px'
+        hr.classList.add("main__line")
+        game.insertAdjacentElement('afterend', hr);
+    }
+});
+  
+})
+gameBut.addEventListener('click',function(){
+  let hrs = document.querySelectorAll(".main__line")
+  for(let i of hrs){
+    i.remove()
+  } 
+  let mainNodes = document.querySelector('.main__container').children
+  for(let i of mainNodes){
+    i.classList.add('notInSearch')
+  }
+  let needGames = games.filter((a) => {
+    if (a.category == 'game') {
+      return 1;
+    } 
+    else {
+      return 0;
+    }
+  }).map(a => a.id);
+  for(let i of needGames){
+    let item = document.querySelector('#game_' + i)
+    item.classList.remove('notInSearch')
+    mainNodes = document.querySelector('.main__container').children
+  }
+  mainNodes = document.querySelector('.main__container').children
+  Array.from(mainNodes).forEach(game => {
+    if (!game.classList.contains('notInSearch')) {
+        let hr = document.createElement('hr');
+        hr.style.width = "532px";
+        hr.style.size = '1px'
+        hr.classList.add("main__line")
+        game.insertAdjacentElement('afterend', hr);
+    }
+  });
+  const element = document.querySelector(".football-main-window");
+  const rect = element.getBoundingClientRect();
+  const top = rect.top + window.pageYOffset;
+  const left = rect.left + window.pageXOffset;
+  const ball = document.querySelector(".football-ball");
+  ball.style.top = top + 'px'
+  ball.style.left = left + 'px'
+
+})
+acquaintanceBut.addEventListener('click',function(){
+  let hrs = document.querySelectorAll(".main__line")
+  for(let i of hrs){
+    i.remove()
+  } 
+  let mainNodes = document.querySelector('.main__container').children
+  for(let i of mainNodes){
+    i.classList.add('notInSearch')
+  }
+  let needGames = games.filter((a) => {
+    if (a.category == 'acquaintance') {
+      return 1;
+    } 
+    else {
+      return 0;
+    }
+  }).map(a => a.id);
+  for(let i of needGames){
+    let item = document.querySelector('#game_' + i)
+    item.classList.remove('notInSearch')
+    mainNodes = document.querySelector('.main__container').children
+  }
+  mainNodes = document.querySelector('.main__container').children
+  Array.from(mainNodes).forEach(game => {
+    if (!game.classList.contains('notInSearch')) {
+        let hr = document.createElement('hr');
+        hr.style.width = "532px";
+        hr.style.size = '1px'
+        hr.classList.add("main__line")
+        game.insertAdjacentElement('afterend', hr);
+    }
+});
+  
+})
