@@ -117,6 +117,93 @@
   transition: all 100ms;
 }
 
+.main-scientist-item {
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-scientist-list {
+  margin-top: 36px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 36px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-scientist-button {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.main-scientist-ul {
+  margin-top: 36px;
+  display: flex;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+  row-gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-scientist-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-scientist-row-1 {
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.main-scientist-all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-scientist-item-title,
+.main-scientist-item-date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 170%;
+  text-align: center;
+  color: #000;
+}
+
+.notInSearch {
+  display: none;
+  position: absolute;
+}
+
+header {
+  transition: 500ms all;
+}
+
+footer {
+  transition: 500ms all;
+}
+
 .rockpaperscisors {
   position: relative;
 }
@@ -436,6 +523,57 @@
   size: 24px;
 }
 
+.div__input {
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  size: 12px;
+}
+
+.birth-home__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+.birth-home__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 166px;
+  padding-right: 50px;
+}
+.birth-home__calcurator {
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  width: 150px;
+  height: 35px;
+  background: #d7d7d7;
+  position: absolute;
+}
+.birth-home__button {
+  position: relative;
+  left: 100%;
+  margin-right: 100px;
+}
+.birth-home__svg {
+  border-radius: 0 20px 20px 0;
+  fill: #000;
+}
+.birth-home__text {
+  font-weight: 400;
+  font-size: 12px;
+  color: #039900;
+  width: 250px;
+}
+
 .header__container {
   display: flex;
   flex-direction: row;
@@ -458,14 +596,10 @@
 .header__burgermenu {
   display: none;
 }
-.header__burgermenu.active {
+.header__burgermenu.active_2 {
   display: block;
   position: absolute;
   padding-top: 25px;
-}
-.header__link {
-  text-decoration: none;
-  color: black;
 }
 .header__links {
   text-decoration: none;
@@ -502,12 +636,16 @@
   top: 0;
   left: 0;
   background-color: #ffffff;
-  transform: scale(1.1);
   transition: 0.5s;
+  background-image: url("../../img/Ellipse 8.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header__switch input:checked:before {
   left: 20px;
   background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("../../img/Ellipse 7.svg");
 }
 body {
   font-family: "Montserrat Alternates", sans-serif;

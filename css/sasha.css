@@ -24,3 +24,54 @@
 .div-title {
   size: 24px;
 }
+
+.div__input {
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  size: 12px;
+}
+
+.birth-home__title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+.birth-home__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 166px;
+  padding-right: 50px;
+}
+.birth-home__calcurator {
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 10px 45px 10px 10px;
+  width: 150px;
+  height: 35px;
+  background: #d7d7d7;
+  position: absolute;
+}
+.birth-home__button {
+  position: relative;
+  left: 100%;
+  margin-right: 100px;
+}
+.birth-home__svg {
+  border-radius: 0 20px 20px 0;
+  fill: #000;
+}
+.birth-home__text {
+  font-weight: 400;
+  font-size: 12px;
+  color: #039900;
+  width: 250px;
+}
