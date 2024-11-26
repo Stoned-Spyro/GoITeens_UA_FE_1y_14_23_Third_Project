@@ -17,7 +17,7 @@
   yearButton.addEventListener("click", checkLeapYear)
 
   const guessButton = document.getElementById("guessButton")
-  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
 
 function checkGuess() {
   const guess = parseInt(document.getElementById("guess").value);
@@ -26,10 +26,9 @@ function checkGuess() {
   if (!isNaN(guess)) {
     if (guess === randomNumber) {
       result.textContent = `Вітаю, ви вгадали число! (${randomNumber})`;
-    } else if (guess > randomNumber) {
-      result.textContent = "Спробуйте менше число!";
-    } else {
-      result.textContent = "Спробуйте більше число!";
+    }else {
+      result.textContent = `Ви програли комп'ютер загадав число (${randomNumber})`;
+      result.style.color = `red`
     }
   } else {
     result.textContent = "Будь ласка, введіть коректне число.";
