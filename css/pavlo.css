@@ -194,3 +194,11 @@
   display: none;
   position: absolute;
 }
+
+header {
+  transition: 500ms all;
+}
+
+footer {
+  transition: 500ms all;
+}
