@@ -699,3 +699,44 @@ acquaintanceBut.addEventListener('click',function(){
 });
   
 })
+//                           Theme Swither
+const switcher = document.querySelector('#switcher');
+
+switcher.addEventListener('change', (event) => {
+  if (event.target.checked) {
+    //    dark
+    let header__item = document.querySelector('.header__item')
+    header__item.style.color = 'white'
+    let header = document.querySelector('header')
+    header.style.backgroundColor = 'grey'
+    let header__text = document.querySelectorAll('.header__links')
+    for(let i of header__text){
+      i.style.color = 'white'
+    }
+    let footer__text = document.querySelectorAll('.footer__text')
+    for(let i of footer__text){
+      i.style.color = 'white'
+    }
+    document.querySelector('.header__text').style.color = 'white'
+    document.querySelector('.footer__textinfo').style.color = 'white'
+    document.querySelector('footer').style.backgroundColor = 'grey'
+  } else {
+    //    light
+    let header__item = document.querySelector('.header__item')
+    header__item.style.color = 'black'
+    let header = document.querySelector('header')
+    header.style.backgroundColor = 'white'
+    let header__text = document.querySelectorAll('.header__links')
+    for(let i of header__text){
+      i.style.color = 'black'
+    }
+    document.querySelector('.header__text').style.color = 'black'
+    let footer__text = document.querySelectorAll('.footer__text')
+    for(let i of footer__text){
+      i.style.color = 'black'
+    }
+    document.querySelector('.header__text').style.color = 'black'
+    document.querySelector('.footer__textinfo').style.color = 'black'
+    document.querySelector('footer').style.backgroundColor = 'white'
+  }
+});
