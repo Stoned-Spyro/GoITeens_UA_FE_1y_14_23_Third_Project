@@ -92,6 +92,51 @@
   size: 24px;
 }
 
+.div__input {
+  outline: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  box-shadow: none;
+  size: 12px;
+}
+
+.calculator__main {
+  display: flex;
+  border-radius: 20px;
+  padding: 10px;
+  height: 35px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #d7d7d7;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #7e7e7e;
+  margin-top: 36px;
+}
+
+.main-birthyear__calculator {
+  width: 215px;
+}
+
+.main-guesser__content {
+  width: 150px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.result {
+  color: green;
+  font-size: 16px;
+}
+
 .header__container {
   display: flex;
   flex-direction: row;
