@@ -10,36 +10,43 @@
     <div>
       <header class="header">
         <div class="header__container container">
-          <img src="./img/Group 4.png" alt="logo" class="header__logo" />
+          <img src="./img/logo.svg" alt="logo" class="header__logo" />
           <nav class="header__navbar">
             <ul class="header__list">
-              <li class="header__item">
+              <li class="header__item item__icon">
                 Інтерактив
-                
+
                 <img
-                  src="/img/Vector 4.png"
+                  src="/img/arrow.svg"
                   alt="arrow"
                   class="header__button--image"
                 />
-                <li class="header__item--burgermenu">a</li>
-                <li class="header__item--burgermenu">a</li>
-                <li class="header__item--burgermenu">a</li>
+                <ul class="header__burgermenu">
+                  <li class="header__burgermenu--item">
+                    <a href="#" class="header__links" id="numerical">Числовий</a>
+                  </li>
+                  <li class="header__burgermenu--item">
+                    <a href="#" class="header__links" id="game">Ігровий</a>
+                  </li>
+                  <li class="header__burgermenu--item">
+                    <a href="#" class="header__links" id="acquaintance">Ознайомчий</a>
+                  </li>
+                </ul>
               </li>
-              <li class="header__item">Контакти</li>
-              <li class="header__item">Наша команда</li>
+              <li class="header__item">
+                <a href="#" class="header__links">Контакти</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__links">Наша команда</a>
+              </li>
             </ul>
           </nav>
           <div class="header__wrapper">
-            <label class="header__switch">
-              <input type="checkbox" />
-              <span class="header__slider"></span>
-            </label>
-  
-            <label class="header__switch">
-              <input type="checkbox" checked />
-              <span class="header__slider"></span>
-            </label>
-  
+            <span class="header__switch">
+              <input type="checkbox" id="switcher" />
+              <label for="switcher"></label>
+            </span>
+
             <p class="header__text">Вітаємо, User!</p>
           </div>
         </div>
@@ -67,56 +74,384 @@
             </div>
             <p id="guessResult" class="result"></p>
           </div>
-          <hr class="main__line" width="532px" size="1px">
-          <div class="main-div-rockpaperscisors main__div">
-            <h2 class="main-title-rockpaperscisors">Камінь - ножиці - папір</h2>
-          </div>
-          <hr class="main__line" width="532px" size="1px">
-      <div class="main-div-calculator main__div">
-          <h2 class="main-title-calculator">Калькулятор</h2>
-          <div class="main-div-calculator-content">
-              <input class="calculator-input-number" data-action="number_1" type="text" placeholder="Введіть число">
-              <div class="calculator-div-actions">
-                  <button class="calculator-button-action" data-action="+">+</button>
-                  <button class="calculator-button-action" data-action="*">*</button>
-                  <button class="calculator-button-action" data-action="-">-</button>
-                  <button class="calculator-button-action" data-action="/">/</button>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="rockpaperscisors main__div" id="game_3">
+            <section class="home__sps sps-home">
+              <!-- sps - stone-paper-scissors -->
+              <div class="sps-home__container container">
+                <div class="sps-home__left">
+                  <h5 class="sps-home__title">Камінь - ножиці - папір</h5>
+                  <ul class="sps-home__list">
+                    <li class="sps-home__item">
+                      <button class="sps-home__button">
+                        <img src="./img/sps/stone.png" alt="" />
+                      </button>
+                    </li>
+                    <li class="sps-home__item">
+                      <button class="sps-home__button">
+                        <img src="./img/sps/scissors.png" alt="" />
+                      </button>
+                    </li>
+                    <li class="sps-home__item">
+                      <button class="sps-home__button">
+                        <img src="./img/sps/paper.png" alt="" />
+                      </button>
+                    </li>
+                  </ul>
+                  <p class="sps-home__text">Ви виграли раунд!</p>
+                  <button class="sps-home__computer">
+                    <p class="sps-home__textcomputer">Варіант комп’ютера</p>
+                  </button>
+                </div>
               </div>
-              <input class="calculator-input-number" data-action="number_2" type="text" placeholder="Введіть число">
-              <button class="calculator-button-action" data-action="=">=</button>
+              <div class="sps-home__right">
+                <ul class="sps-home__listr">
+                  <li class="sps-home__itemr">Рахунок:</li>
+                  <li class="sps-home__itemr">Комп’ютер - 0</li>
+                  <li class="sps-home__itemr">Ви - 0</li>
+                </ul>
+              </div>
+            </section>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-calculator main__div" id="game_4">
+            <h2 class="main-title-calculator">Калькулятор</h2>
+            <div class="main-div-calculator-content">
+              <input
+                class="calculator-input-number"
+                data-action="number_1"
+                type="text"
+                placeholder="Введіть число"
+              />
+              <div class="calculator-div-actions">
+                <button class="calculator-button-action" data-action="+">
+                  +
+                </button>
+                <button class="calculator-button-action" data-action="*">
+                  *
+                </button>
+                <button class="calculator-button-action" data-action="-">
+                  -
+                </button>
+                <button class="calculator-button-action" data-action="/">
+                  /
+                </button>
+              </div>
+              <input
+                class="calculator-input-number"
+                data-action="number_2"
+                type="text"
+                placeholder="Введіть число"
+              />
+              <button class="calculator-button-action" data-action="=">
+                =
+              </button>
               <h3 class="calculator-result-calculator">Результат</h3>
+            </div>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-time main__div" id="game_5">
+            <h2 class="main-title-time">
+              <section class="home__time time-home">
+                <div class="time-home__container container">
+                  <h1 class="time-home__title">Калькулятор часу</h1>
+                  <div class="time-home__bottom">
+              <div class="time-home__actions">
+                <input
+                class="time-home__calcurator"
+                data-action="number_1"
+                type="text"
+                placeholder="Введіть число"
+                
+              />
+                <button class="time-home__button">
+                  <svg class="time-home__svg" width="35" height="35" viewBox="0 0 35 35" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H17.5C27.165 0 35 7.83502 35 17.5C35 27.165 27.165 35 17.5 35H0V0Z" fill="black" />
+                    <circle cx="16.5217" cy="16.5217" r="5.52174" stroke="white" stroke-width="2" />
+                    <path d="M24.2929 25.7071C24.6834 26.0976 25.3166 26.0976 25.7071 25.7071C26.0976 25.3166 26.0976 24.6834 25.7071 24.2929L24.2929 25.7071ZM21.468 20.0538L20.7609 19.3467L19.3467 20.7609L20.0538 21.468L21.468 20.0538ZM25.7071 24.2929L21.468 20.0538L20.0538 21.468L24.2929 25.7071L25.7071 24.2929Z" fill="white" />
+                  </svg>
+                </button>
+                  </div>
+                  <p class="time-home__text">3 дн. 15:45:01</p>
+                </div>
+              </section>
+            </h2>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-dinosaur main__div" id="game_6">
+            <div class="main-div-dino">
+              <h2 class="dino-time">Рахунок: 0</h2>
+              <div class="main-dino-window">
+                <img
+                  class="dino-player"
+                  src="/img/dino/dino_idle_1.png"
+                  alt=""
+                />
+                <button class="dino-button-restart">
+                  <img src="/img/dino/restart_button.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-football main__div" id="game_7">
+            <div class="football-main-window">
+              <img class="football-ball" src="./img/ball.png" alt="">
+            </div>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-three main__div" id="game_8">
+            <section class="home__three three-home">
+              <div class="three-home__container container">
+                <h1 class="three-home__title">Введіть 3 числа</h1>
+                <ul class="three-home__list">
+                  <li class="three-home__item">
+                    <input
+                      class="three-home__input"
+                      type="text"
+                      placeholder="Введіть число"
+                    />
+                  </li>
+                  <li class="three-home__item">
+                    <input
+                      class="three-home__input"
+                      type="text"
+                      placeholder="Введіть число"
+                    />
+                  </li>
+                  <li class="three-home__item">
+                    <input
+                      class="three-home__input"
+                      type="text"
+                      placeholder="Введіть число"
+                    />
+                  </li>
+                </ul>
+                <p class="three-home__text">
+                  Найбільше число, яке ви ввели - (число)
+                </p>
+              </div>
+            </section>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+
+          <div class="main-div-team main__div" id="game_9">
+            <section class="home__team team-home">
+              
+              <div class="team-home__container container">
+                <h1 class="team-home__title">Наша команда</h1>
+                <div id="top" >
+                  <img
+                    src="./img/team/arrow-left.png"
+                    alt=""
+                    class="team-home__arrow-left arrow"
+                  />
+                  <div id="slider" class="">
+                      <div class="team-home__slides block">
+                        <img
+                          src="https://i.pinimg.com/564x/86/cf/6f/86cf6fbc74b374897892af438fa10f5b.jpg"
+                          alt=""
+                          class="team-home__img "
+                        />
+                        <h2 class="team-home__name">Амалія</h2>
+                        <p class="team-home__text">
+                          Інформація про роботу, яку він/вона виконав/ла
+                        </p>
+                      </div>
+                      <div class="team-home__slides"> 
+                        <img
+                        src="https://i.pinimg.com/564x/89/bc/e3/89bce3855fa835d7edd50c24af28ac70.jpg"
+                        alt=""
+                        class="team-home__img"
+                      />
+                      <h2 class="team-home__name">Саша</h2>
+                      <p class="team-home__text">
+                        Інформація про роботу, яку він/вона виконав/ла
+                      </p>
+                      </li>
+                      </div>
+                      <div class="team-home__slides">
+                        <img
+                        src="https://i.pinimg.com/736x/c0/2f/99/c02f9992b879b48d18297fe7441fefea.jpg"
+                        alt=""
+                        class="team-home__img"
+                      />
+                      <h2 class="team-home__name">Назарій</h2>
+                      <p class="team-home__text">
+                        Інформація про роботу, яку він/вона виконав/ла
+                      </p>
+                      </li>
+                      </div>
+                      <div class="team-home__slides">
+                        <img
+                        src="https://i.pinimg.com/736x/1d/60/2f/1d602f2d214671df01d745b4acbe4729.jpg"
+                        alt=""
+                        class="team-home__img"
+                      />
+                      <h2 class="team-home__name">Павло</h2>
+                      <p class="team-home__text">
+                        Інформація про роботу, яку він/вона виконав/ла
+                      </p>
+                      </div>
+                  </div>
+                  <img
+                    src="./img/team/arrow-right.png"
+                    alt=""
+                    class="team-home__arrow-right arrow"
+                  />
+                </div>
+                <div id="bottom">
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <hr class="main__line" width="532px" size="1px" />
+          <div class="main-div-scientist main__div" id="game_10">
+            <h2 class="main-title-scientist">Обери вченого/их</h2>
+            <div class="main-scientist-all">
+              <ul class="main-scientist-list">
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                <li class="main-scientist-item">
+                  <h2 class="main-scientist-item-title"></h2>
+                  <h2 class="main-scientist-item-date"></h2>
+                  
+                </li>
+                
+              </ul>
+              <ul class="main-scientist-ul"> 
+                <li class="main-scientist-item-row">
+                  <ul class="main-scientist-row-1 main-scientist-row">
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-19-st">Які вчені народилися в 19 ст.</button>
+                    </li>
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-alphabet">Відсортувати вчених за алфавітом</button>
+                    </li>
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-age">Відсортувати вчених за кількістю прожитих років</button>
+                    </li>
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-born">Знайти вченого, який народився найпізніше</button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-scientist-item-row">
+                  <ul class="main-scientist-row-2 main-scientist-row">
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-albert-born">Знайти рік народження Albert Einshtein</button>
+                    </li>
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-C">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
+                    </li>
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-A">Видалити всіх вчених, ім’я яких починається на “А”</button>
+                    </li>
+                    <li class="main-scientist-buttons-item">
+                      <button class="main-scientist-button" id="scientists-best-worst">Знайти вченого, який прожив найдовше і вченого,  <br>який прожив найменше</button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-scientist-item-row">
+                  <button class="main-scientist-button" id="scientists-first-letter">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="main__line" width="532px" size="1px" />
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container ">
+          <!-- <div class="footer__left"> -->
+            <img src="./img/logo.svg" alt="logo" class="footer__logo" />
+          <!-- </div> -->
+            <ul class="footer__list">
+              <li class="footer__item">
+                <p class="footer__text">Тел: +38 (123) 456 78 90</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">E-Mail: codingmagic@gmail.com</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">Facebook: CodingMagic</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">Twitter: CodingMagic</p>
+              </li>
+              <li class="footer__item">
+                <p class="footer__text">Instagram: CodingMagic</p>
+              </li>
+            </ul>
+              <!-- <div class="footer__right"> -->
+                <div class="footer__information">
+                  <input
+                      class="footer__input"
+                      type="text"
+                      autocomplete="on"
+                      placeholder="Ваша ел. адреса..."
+                    />
+                    <button class="footer__button">Підписатись</button>
+                    <p class="footer__textinfo">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+                </div>
+              <!-- </div> -->
           </div>
         </div>
-          <hr class="main__line" width="532px" size="1px">
-          <div class="main-div-time main__div">
-            <h2 class="main-title-time">Калькулятор часу</h2>
-          </div>
-          <hr class="main__line" width="532px" size="1px">
-          <div class="main-div-dinosaur main__div">
-            <h2 class="main-title-dinosaur">Google динозавр</h2>
-          </div>
-          <hr class="main__line" width="532px" size="1px">
-          <div class="main-div-football main__div">
-            <h2 class="main-title-football">Футбол</h2>
-          </div>
-          <hr class="main__line" width="532px" size="1px">
-          <div class="main-div-three main__div">
-            <h2 class="main-title-three">Введіть 3 числа</h2>
-          </div>
-          <hr class="main__line" width="532px" size="1px">
-          <div class="main-div-team main__div">
-            <h2 class="main-title-team">Наша команда</h2>
-          </div>
-          <hr class="main__line" width="532px" size="1px">
-          <div class="main-div-scientist main__div">
-            <h2 class="main-title-scientist">Обери вченого/их</h2>
-          </div>
-          <hr class="main__line" width="532px" size="1px">
-    
-    </div>
-    <footer class="footer">
-
-    </footer>
+      </footer>
     </div>
     <script type="module" src="main.js"></script>
   </body>

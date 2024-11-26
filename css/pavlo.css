@@ -64,3 +64,133 @@
   gap: 36px;
   align-items: center;
 }
+
+.main-dino-window {
+  position: relative;
+  outline: 1px solid black;
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-image: url("/img/dino/dino_ground.png");
+  background-repeat: repeat-x;
+  background-position: 0px 130px;
+}
+
+.dino-player {
+  width: 50px;
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+.dino-button-restart {
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 160px;
+}
+
+.dino-time {
+  font-size: x-large;
+}
+
+.cactus {
+  height: 60px;
+  margin-top: 85px;
+}
+
+.football-main-window {
+  background-color: #5ABB58;
+  border-radius: 10px;
+  outline: 3px solid black;
+  width: 720px;
+  height: 220px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.football-ball {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transition: all 100ms;
+}
+
+.main-scientist-item {
+  width: 100px;
+  height: 100px;
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-scientist-list {
+  margin-top: 36px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 36px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-scientist-button {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  background: #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.main-scientist-ul {
+  margin-top: 36px;
+  display: flex;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+  row-gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-scientist-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-scientist-row-1 {
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.main-scientist-all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-scientist-item-title,
+.main-scientist-item-date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 170%;
+  text-align: center;
+  color: #000;
+}
+
+.notInSearch {
+  display: none;
+  position: absolute;
+}
