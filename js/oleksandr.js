@@ -17,11 +17,12 @@
   yearButton.addEventListener("click", checkLeapYear)
 
   const guessButton = document.getElementById("guessButton")
-  const randomNumber = Math.floor(Math.random() * 10) + 1;
+
 
 function checkGuess() {
   const guess = parseInt(document.getElementById("guess").value);
   const result = document.getElementById("guessResult");
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
 
   if (!isNaN(guess)) {
     if (guess === randomNumber) {

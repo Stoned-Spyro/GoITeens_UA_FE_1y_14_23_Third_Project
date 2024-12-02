@@ -414,6 +414,7 @@ footer {
 .team-home__text {
   font-weight: 400;
   font-size: 12px;
+  height: 120px;
   color: #000;
   text-align: center;
 }
@@ -668,6 +669,9 @@ body {
   padding: 0px;
   margin: 0px;
   border: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 *,

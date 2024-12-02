@@ -336,6 +336,7 @@
   &__text {
     font-weight: 400;
     font-size: 12px;
+    height: 120px;
     color: #000;
     text-align: center;
   }
@@ -384,15 +385,14 @@
 //! footer
 
 .footer {
-
   // .footer__container
 
   &__container {
     padding: 50px;
     display: flex;
     justify-content: center;
-  align-items: center;
-  gap: 180px;
+    align-items: center;
+    gap: 180px;
   }
 
   // .footer__left
