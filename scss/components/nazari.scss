@@ -54,21 +54,12 @@
     }
   }
 
-  &__burgermenu.active {
+  &__burgermenu.active_2 {
     display: block;
     position: absolute;
     padding-top: 25px;
-    
   }
 
- 
-    // .burgermenu__link
-
-    &__link {
-      text-decoration: none;
-      color: black;
-    }
-  
   // .header__links
 
   &__links {
@@ -121,13 +112,17 @@
     top: 0;
     left: 0;
     background-color: #ffffff;
-    transform: scale(1.1);
     transition: 0.5s;
+    background-image: url("img/Ellipse\ 8.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &__switch input:checked:before {
     left: 20px;
     background-color: black;
+    background-repeat: no-repeat;
+    background-image: url("img/Ellipse\ 7.svg");
   }
 
   // .header__text
