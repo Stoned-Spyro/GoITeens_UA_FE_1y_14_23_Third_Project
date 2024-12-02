@@ -73,7 +73,7 @@
   height: 150px;
   overflow: hidden;
   border-radius: 10px;
-  background-image: url("/img/dino/dino_ground.png");
+  background-image: url("./img/dino/dino_ground.png");
   background-repeat: repeat-x;
   background-position: 0px 130px;
 }
@@ -638,7 +638,7 @@ footer {
   left: 0;
   background-color: #ffffff;
   transition: 0.5s;
-  background-image: url("../../img/Ellipse 8.svg");
+  background-image: url("img/Ellipse 8.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -646,7 +646,7 @@ footer {
   left: 20px;
   background-color: black;
   background-repeat: no-repeat;
-  background-image: url("../../img/Ellipse 7.svg");
+  background-image: url("img/Ellipse 7.svg");
 }
 body {
   font-family: "Montserrat Alternates", sans-serif;

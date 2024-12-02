@@ -72,7 +72,7 @@
   height: 150px;
   overflow: hidden;
   border-radius: 10px;
-  background-image: url("/img/dino/dino_ground.png");
+  background-image: url("./img/dino/dino_ground.png");
   background-repeat: repeat-x;
   background-position: 0px 130px;
 }
