@@ -42,8 +42,8 @@
 }
 .header__switch input {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 40px;
   height: 20px;
   border-radius: 12px;
@@ -61,7 +61,7 @@
   left: 0;
   background-color: #ffffff;
   transition: 0.5s;
-  background-image: url("../../img/Ellipse 8.svg");
+  background-image: url("./img/Ellipse 8.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -69,5 +69,5 @@
   left: 20px;
   background-color: black;
   background-repeat: no-repeat;
-  background-image: url("../../img/Ellipse 7.svg");
+  background-image: url("./img/Ellipse 7.svg");
 }

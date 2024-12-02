@@ -182,7 +182,49 @@ button.addEventListener('click', () => {
   if (!isNaN(seconds) && seconds >= 0) {
     const formattedTime = formatTime(seconds);
     outputText.textContent = formattedTime;
-  } else {
+  }
+   else {
     outputText.textContent = 'Це не є числом';
   }
+});
+
+//! modal
+
+const modal = document.querySelector(".modal");
+document.querySelector(".footer__button").onclick = () => {
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+};
+document.querySelector(".modal__close").onclick = 
+document.querySelector(".modal__overlay").onclick = () => {
+  modal.style.display = "none";
+  document.body.style.overflow = "";
+};
+
+//! modal-start
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.querySelector(".modal-start");
+  const closeButton = document.querySelector(".modal-start__close");
+  const inputField = document.querySelector(".modal-start__input");
+  const saveButton = document.querySelector(".modal-start__button");
+
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+    document.body.style.overflow = ""; 
+  });
+
+  saveButton.addEventListener("click", () => {
+    const name = inputField.value.trim();
+    if (name) {
+      alert(`Вітаємо, ${name}!`);
+      modal.style.display = "none";
+      document.body.style.overflow = "";
+    } else {
+      alert("Будь ласка, введіть своє ім'я!");
+    }
+  });
 });

@@ -8,7 +8,10 @@
   </head>
   <body>
     <div>
+
+
       <header class="header">
+  
         <div class="header__container container">
           <img src="./img/logo.svg" alt="logo" class="header__logo" />
           <nav class="header__navbar">
@@ -52,6 +55,7 @@
         </div>
       </header>
       <div class="main">
+        
         <div class="main__container">
           <span class="main-div-title main__div">
             <p class="div-title">Популярні інетрактивні ігри</p>
@@ -210,7 +214,7 @@
                   </svg>
                 </button>
                   </div>
-                  <p class="time-home__text">3 дн. 15:45:01</p>
+                  <p class="time-home__text"> введіть число</p>
                 </div>
               </section>
             </h2>
@@ -222,11 +226,11 @@
               <div class="main-dino-window">
                 <img
                   class="dino-player"
-                  src="img/dino/dino_idle_1.png"
+                  src="./img/dino/dino_idle_1.png"
                   alt=""
                 />
                 <button class="dino-button-restart">
-                  <img src="img/dino/restart_button.png" alt="" />
+                  <img src="./img/dino/restart_button.png" alt="" />
                 </button>
               </div>
             </div>
@@ -470,9 +474,7 @@
       </div>
       <footer class="footer">
         <div class="footer__container ">
-          <!-- <div class="footer__left"> -->
             <img src="./img/logo.svg" alt="logo" class="footer__logo" />
-          <!-- </div> -->
             <ul class="footer__list">
               <li class="footer__item">
                 <p class="footer__text">Тел: +38 (123) 456 78 90</p>
@@ -501,9 +503,75 @@
                     <button class="footer__button">Підписатись</button>
                     <p class="footer__textinfo">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
                 </div>
-              <!-- </div> -->
+
+          <div class="modal">
+            <div class="modal__block">
+              <button class="modal__close">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black" />
+                </svg>
+              </button>
+              <h2 class="modal__title">Дякую за підписку!</h2>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <img class="modal__img-one" src="./img/modal/sword.png" alt="">
+                </li>
+                <li class="modal__item">
+                  <img class="modal__img-two" src="./img/modal/puzzle.png" alt="">
+                </li>
+                <li class="modal__item">
+                  <img class="modal__img-three" src="./img/modal/game-development.png" alt="">
+                </li>
+                <li class="modal__item">
+                  <img class="modal__img-four" src="./img/modal/tic-tac-toe.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <div class="modal__overlay"></div>
           </div>
-        </div>
+
+
+          <div class="modal-start">
+            <div class="modal-start__block">
+              <button class="modal-start__close">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L8.5 8.5M16 16L8.5 8.5M8.5 8.5L16 1L1 16" stroke="black" />
+                </svg>
+              </button>
+              <div class="modal-start__information">
+                <h2 class="modal-start__title">Привіт!
+                  Ви потрапили на сайт інтерактивних ігор та завдань
+                  Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+                  Бажаємо Вам гарно провести час!</h2>
+                  <p class="modal-start__text">Введіть своє ім’я:</p>
+                  <div class="modal-start__information">
+                    <input
+                        class="modal-start__input"
+                        type="text"
+                        autocomplete="on"
+                        placeholder="Ваше ім’я..."
+                      />
+                      <button class="modal-start__button">Зберегти</button>
+                    </div>
+                <ul class="modal-start__list">
+                  <li class="modal-start__item">
+                    <img class="modal-start__img-one" src="./img/modal/sword.png" alt="">
+                  </li>
+                  <li class="modal-start__item">
+                    <img class="modal-start__img-two" src="./img/modal/puzzle.png" alt="">
+                  </li>
+                  <li class="modal-start__item">
+                    <img class="modal-start__img-three" src="./img/modal/game-development.png" alt="">
+                  </li>
+                  <li class="modal-start__item">
+                    <img class="modal-start__img-four" src="./img/modal/tic-tac-toe.png" alt="">
+                  </li>
+                </ul>
+            </div>
+            <div class="modal-start__overlay"></div>
+          </div>
+            </div>
+          </div>
       </footer>
     </div>
     <script type="module" src="main.js"></script>

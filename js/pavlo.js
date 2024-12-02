@@ -85,11 +85,11 @@ let time = 0;
 let gameStatus = "none";
 let i = 0;
 let animationNeed = true;
-let cactusFrames = ["/img/dino/cactus_1.png", "/img/dino/cactus_2.png"];
+let cactusFrames = ["./img/dino/cactus_1.png", "./img/dino/cactus_2.png"];
 let dinoAnimateFrames = [
-  "/img/dino/dino_idle_1.png",
-  "/img/dino/dino_run_1.png",
-  "/img/dino/dino_run_2.png",
+  "./img/dino/dino_idle_1.png",
+  "./img/dino/dino_run_1.png",
+  "./img/dino/dino_run_2.png",
 ];
 let intervals = [];
 
